@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
 		pr = fork();
 		int status;
 		if(pr == 0){
-		execl("first", "-c 1", (char*) tmp.c_str(), NULL);
+		execl("1", "-c 1", (char*) tmp.c_str(), NULL);
 	}
 	else if (pr > 0){
 		wait(&status);
