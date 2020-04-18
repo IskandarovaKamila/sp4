@@ -7,6 +7,6 @@ WORKDIR /home/script/
 RUN git clone https://github.com/IskandarovaKamila/sp4.git \
 	&& cd sp4/ \
 	&& g++ 1.cpp -o 1 \ 
-	&& g++ main.cpp -o main -lstdc++fs
+	&& g++ main.cpp -o main -lstdc++fs -pthread
 
 WORKDIR /home/script/sp4/
